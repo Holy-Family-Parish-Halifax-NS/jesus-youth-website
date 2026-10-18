@@ -64,7 +64,7 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 ## Rules
 
 - **Photos:** only with parents' permission, especially when children's faces are visible.
-- **Logos:** only use the Jesus Youth and parish logos once Fr. Daris has approved.
+- **Logos:** Fr. Daris has approved using the Jesus Youth and parish logos.
 - **Prayer intentions:** keep them private to a small group. Never show them on the site.
 - **No guessing:** never invent dates, links, or names. Leave a clear `TODO` instead.
 
@@ -75,15 +75,15 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 | `content/9-month-journey.md` | The nine monthly topics |
 | `content/prayer-english.md` | Family prayer, English |
 | `content/prayer-malayalam.md` | Family prayer, Malayalam |
-| `assets/jy-logo.png` | Jesus Youth logo (approval pending) |
-| `assets/parish-logo.jpg` | Holy Family Parish logo (approval pending) |
+| `assets/jy-logo.png` | Jesus Youth logo (approved) |
+| `assets/parish-logo.jpg` | Holy Family Parish logo (approved) |
 | `assets/9-month-journey.jpg` | 9-month journey poster |
 | `private/` | Files kept on the maintainer's computer only, never pushed (ignored by git). Holds the Aug 23, 2026 group photo until parents approve |
 | `events/rosary-2026/index.html` | Sign-up page for the 10-day Family Rosary |
 
 ## Open decisions
 
-- [ ] Fr. Daris approves using the logos
+- [x] Fr. Daris approves using the logos
 - [ ] Parents approve the group photo (then move it from `private/` to `assets/`)
 - [ ] Create the prayer intentions form, and decide who reads the intentions
 - [ ] Collect real links: parish website, Mass times, Jesus Youth Canada
