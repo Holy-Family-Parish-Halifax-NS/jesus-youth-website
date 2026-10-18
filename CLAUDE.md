@@ -7,7 +7,7 @@ Guidance for anyone (human or AI) working in this repo.
 Website for the **Jesus Youth Family Prayer Group** at Holy Family Syro-Malabar Catholic Parish, Halifax, Nova Scotia.
 
 - **Site title:** Jesus Youth Holy Family Parish, Halifax
-- **Address:** jy.holyfamilyhalifax.ca (today it forwards to the RSVP Google Form)
+- **Address:** jy.holyfamilyhalifax.ca (until Oct 30, 2026 it forwards to the Rosary 2026 page; after that, point it back to the RSVP form or the main site)
 - **Hosting plan:** GitHub Pages from this repo. On GitHub's free plan the repo must be public to use Pages.
 - **Maintainers:** Tony Jose Kalavanal and Jobil
 - **Chaplain:** Fr. Daris Cherian
