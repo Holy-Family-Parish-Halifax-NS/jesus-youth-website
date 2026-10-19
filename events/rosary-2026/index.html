@@ -136,7 +136,7 @@
       body += `<a class="btn" href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">Host this day</a>`;
     }
 
-    const tag = past ? "Completed" : taken ? "Hosted" : "Open";
+    const tag = past ? "Completed" : taken ? "Confirmed" : "Open";
     el.innerHTML = `<div class="date"><strong>Day ${i + 1}: ${label}</strong><span class="tag">${tag}</span></div>
       <div class="mlday" lang="ml">${ML_DAYS[dt.getDay()]}</div>${body}`;
     box.appendChild(el);
