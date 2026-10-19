@@ -43,6 +43,7 @@
   .tag { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--sage); }
   .taken .tag { color: var(--orange); }
   .host { margin: 8px 0 2px; font-weight: 600; }
+  .time { margin: 2px 0; color: var(--orange); font-weight: 700; font-size: 16px; }
   .addr, .phone, .note { margin: 2px 0; color: var(--muted); font-size: 16px; }
   .addr a { color: var(--orange); }
   .btn { display: inline-block; margin-top: 10px; background: #25D366; color: #fff; text-decoration: none; font-weight: 700; padding: 10px 18px; border-radius: 999px; font-size: 16px; }
@@ -115,6 +116,8 @@
      - phone: only if the family said yes to showing it, otherwise ""
      - notes: optional, e.g. "Parking at the back"
      Leave husband as "" for an open day.
+     - title / time: optional. For a day that is not at a home, e.g.
+       title: "At our parish church", time: "4:30 PM"
      - hold: optional. Put a short message to hide the "Host this day"
        button while a day is being decided, e.g. "Plan coming soon."
      ===================================================================== */
@@ -123,7 +126,7 @@
     { date: "2026-10-22", husband: "Franklin Francis", wife: "Vinu Franklin", address: "209 Drysdale Road, Halifax, NS", phone: "", notes: "" },
     { date: "2026-10-23", husband: "Jobin Thomas", wife: "Priyanka Mathew", address: "Unit 417, 210 Wentworth Drive, Halifax, NS", phone: "", notes: "" },
     { date: "2026-10-24", husband: "Akhil Jose Manavalan", wife: "Dona John", address: "Unit 114, 15 Highfield Park Drive, Dartmouth, NS", phone: "", notes: "" },
-    { date: "2026-10-25", husband: "", wife: "", address: "", phone: "", notes: "", hold: "Plan for this day will be shared soon." },
+    { date: "2026-10-25", title: "At our parish church, together with all parishioners", time: "4:30 PM sharp", husband: "", wife: "", address: "6032 Normandy Dr, Halifax, NS", phone: "", notes: "Before the 5 PM Holy Mass" },
     { date: "2026-10-26", husband: "Johns George", wife: "Susanna Joseph", address: "128 Lier Ridge, Halifax, NS",phone: "", notes: "" },
     { date: "2026-10-27", husband: "Job Chooracakal Johny", wife: "Reni Raphel", address: "37 Wineberry Way, Upper Sackville, NS B4E 0S5", phone: "", notes: "" },
     { date: "2026-10-28", husband: "Raphy", wife: "Lincy", address: "139 Darner Drive, Beaver Bank, NS B4G 0E2", phone: "416-453-1059", notes: "" },
@@ -142,8 +145,9 @@
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const box = document.getElementById("days");
 
-  const confirmed = DAYS.filter(d => d.husband.trim() !== "").length;
-  const onHold = DAYS.filter(d => d.husband.trim() === "" && d.hold).length;
+  const isTaken = d => d.husband.trim() !== "" || !!d.title;
+  const confirmed = DAYS.filter(isTaken).length;
+  const onHold = DAYS.filter(d => !isTaken(d) && d.hold).length;
   const openLeft = DAYS.length - confirmed - onHold;
   document.getElementById("count").textContent = `${confirmed} of ${DAYS.length}`;
   const parts = [];
@@ -156,7 +160,7 @@
     const [y, m, dd] = d.date.split("-").map(Number);
     const dt = new Date(y, m - 1, dd);
     const label = `${EN_DAYS[dt.getDay()]}, ${MONTHS[m - 1]} ${dd}`;
-    const taken = d.husband.trim() !== "";
+    const taken = isTaken(d);
     const past = dt < today;
     const el = document.createElement("div");
     el.className = "day" + (taken ? " taken" : "") + (past ? " past" : "");
@@ -164,7 +168,8 @@
     let body = "";
     if (taken) {
       const maps = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(d.address);
-      body += `<p class="host">${esc(d.husband)} and ${esc(d.wife)}'s residence</p>`;
+      body += `<p class="host">${d.title ? esc(d.title) : `${esc(d.husband)} and ${esc(d.wife)}'s residence`}</p>`;
+      if (d.time) body += `<p class="time">${esc(d.time)}</p>`;
       if (d.address) body += `<p class="addr"><a href="${maps}" target="_blank" rel="noopener">${esc(d.address)}</a></p>`;
       if (d.phone) body += `<p class="phone">${esc(d.phone)}</p>`;
       if (d.notes) body += `<p class="note">${esc(d.notes)}</p>`;
