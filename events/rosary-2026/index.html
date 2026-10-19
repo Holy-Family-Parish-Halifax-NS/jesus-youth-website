@@ -28,6 +28,12 @@
   h2 { color: var(--navy); font-size: 21px; margin: 26px 0 12px; }
   .steps { margin: 0; padding-left: 22px; }
   .steps li { margin-bottom: 6px; }
+  .progress { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 14px; }
+  .progress-text { color: var(--navy); font-size: 17px; margin-bottom: 8px; }
+  .progress-text strong { font-size: 22px; color: var(--orange); }
+  .progress-text span { color: var(--muted); font-size: 15px; }
+  .bar { height: 10px; background: var(--line); border-radius: 999px; overflow: hidden; }
+  .bar div { height: 100%; background: var(--orange); border-radius: 999px; }
   .day { background: #fff; border: 1px solid var(--line); border-left: 6px solid var(--sage); border-radius: 14px; padding: 14px 18px; margin-bottom: 12px; }
   .day.taken { border-left-color: var(--orange); }
   .day.past { opacity: .6; }
@@ -88,6 +94,10 @@
   </ul>
 
   <h2>The 10 days</h2>
+  <div class="progress" aria-live="polite">
+    <div class="progress-text"><strong id="count"></strong> days confirmed <span id="open"></span></div>
+    <div class="bar"><div id="fill"></div></div>
+  </div>
   <div id="days"></div>
 
   <p class="alt">No WhatsApp? Call or text Tony at <a href="tel:+19024409313">+1 (902) 440-9313</a></p>
@@ -129,6 +139,12 @@
 
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const box = document.getElementById("days");
+
+  const confirmed = DAYS.filter(d => d.husband.trim() !== "").length;
+  const openLeft = DAYS.length - confirmed;
+  document.getElementById("count").textContent = `${confirmed} of ${DAYS.length}`;
+  document.getElementById("open").textContent = openLeft === 0 ? "· All days are taken. Thank you!" : `· ${openLeft} still open`;
+  document.getElementById("fill").style.width = `${(confirmed / DAYS.length) * 100}%`;
 
   DAYS.forEach((d, i) => {
     const [y, m, dd] = d.date.split("-").map(Number);
