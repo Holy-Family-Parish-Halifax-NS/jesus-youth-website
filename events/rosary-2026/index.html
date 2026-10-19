@@ -115,13 +115,15 @@
      - phone: only if the family said yes to showing it, otherwise ""
      - notes: optional, e.g. "Parking at the back"
      Leave husband as "" for an open day.
+     - hold: optional. Put a short message to hide the "Host this day"
+       button while a day is being decided, e.g. "Plan coming soon."
      ===================================================================== */
   const DAYS = [
     { date: "2026-10-21", husband: "Bibin Sebastian", wife: "Febina Joseph", address: "202 States Lane, Beechville, NS", phone: "", notes: "" },
     { date: "2026-10-22", husband: "Franklin Francis", wife: "Vinu Franklin", address: "209 Drysdale Road, Halifax, NS", phone: "", notes: "" },
     { date: "2026-10-23", husband: "Jobin Thomas", wife: "Priyanka Mathew", address: "Unit 417, 210 Wentworth Drive, Halifax, NS", phone: "", notes: "" },
     { date: "2026-10-24", husband: "Akhil Jose Manavalan", wife: "Dona John", address: "Unit 114, 15 Highfield Park Drive, Dartmouth, NS", phone: "", notes: "" },
-    { date: "2026-10-25", husband: "", wife: "", address: "", phone: "", notes: "" },
+    { date: "2026-10-25", husband: "", wife: "", address: "", phone: "", notes: "", hold: "Plan for this day will be shared soon." },
     { date: "2026-10-26", husband: "Johns George", wife: "Susanna Joseph", address: "128 Lier Ridge, Halifax, NS",phone: "", notes: "" },
     { date: "2026-10-27", husband: "Job Chooracakal Johny", wife: "Reni Raphel", address: "37 Wineberry Way, Upper Sackville, NS B4E 0S5", phone: "", notes: "" },
     { date: "2026-10-28", husband: "Raphy", wife: "Lincy", address: "139 Darner Drive, Beaver Bank, NS B4G 0E2", phone: "416-453-1059", notes: "" },
@@ -141,9 +143,13 @@
   const box = document.getElementById("days");
 
   const confirmed = DAYS.filter(d => d.husband.trim() !== "").length;
-  const openLeft = DAYS.length - confirmed;
+  const onHold = DAYS.filter(d => d.husband.trim() === "" && d.hold).length;
+  const openLeft = DAYS.length - confirmed - onHold;
   document.getElementById("count").textContent = `${confirmed} of ${DAYS.length}`;
-  document.getElementById("open").textContent = openLeft === 0 ? "· All days are taken. Thank you!" : `· ${openLeft} still open`;
+  const parts = [];
+  if (openLeft > 0) parts.push(`${openLeft} still open`);
+  if (onHold > 0) parts.push(`${onHold} to be decided`);
+  document.getElementById("open").textContent = parts.length ? "· " + parts.join(" · ") : "· All days are taken. Thank you!";
   document.getElementById("fill").style.width = `${(confirmed / DAYS.length) * 100}%`;
 
   DAYS.forEach((d, i) => {
@@ -162,12 +168,14 @@
       if (d.address) body += `<p class="addr"><a href="${maps}" target="_blank" rel="noopener">${esc(d.address)}</a></p>`;
       if (d.phone) body += `<p class="phone">${esc(d.phone)}</p>`;
       if (d.notes) body += `<p class="note">${esc(d.notes)}</p>`;
+    } else if (d.hold) {
+      body += `<p class="note">${esc(d.hold)}</p>`;
     } else if (!past) {
       const msg = `Hi Tony, we would like to host the Rosary (Mother Mary comes to our homes) on ${label} at 7 PM.\n\nHusband's full name:\nWife's full name:\nAddress:\nOK to show our phone number on the page? (Yes/No):`;
       body += `<a class="btn" href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">Host this day</a>`;
     }
 
-    const tag = past ? "Completed" : taken ? "Confirmed" : "Open";
+    const tag = past ? "Completed" : taken ? "Confirmed" : d.hold ? "To be decided" : "Open";
     el.innerHTML = `<div class="date"><strong>Day ${i + 1}: ${label}</strong><span class="tag">${tag}</span></div>
       <div class="mlday" lang="ml">${ML_DAYS[dt.getDay()]}</div>${body}`;
     box.appendChild(el);
