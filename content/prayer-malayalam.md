@@ -1,6 +1,6 @@
 # പ്രാർത്ഥന
 
-Final version: written by Josna chechi from our points, with a line added for the Holy Spirit and a phrase added on evangelization.
+Final version: written by Josna chechi from our points, with a line added for the Holy Spirit and a phrase added on evangelization. Approved by Fr. Daris Cherian.
 
 Keep the text exactly as written.
 

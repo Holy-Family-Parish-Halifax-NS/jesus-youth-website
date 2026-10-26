@@ -25,6 +25,33 @@ One-time event pages live in `events/` (see below) and can be built when asked.
 - After the event ends, remove home addresses and phone numbers, and keep the page as a record.
 - **Current:** `events/rosary-2026/`, "മാതാവ് നമ്മുടെ ഭവനങ്ങളിലേക്ക് (Mother Mary comes to our homes)", 10-day Family Rosary, Oct 21 to 30, 7 PM. Families book through Tony on WhatsApp; Tony confirms and fills in the `DAYS` list at the top of the page's script.
 
+### Planned: Rosary 2026 memory page (build after Oct 30, 2026)
+
+Turn `events/rosary-2026/` into a keepsake page, "Mother Mary's Journey".
+
+- Opens with the title and a short line, e.g. "10 evenings, 10 homes, one parish family praying together."
+- As the reader scrolls, a gold path draws from Day 1 to Day 10, with a small statue icon moving along it.
+- One card per day: host family names, unit colour, 2 to 3 photos, one line about the evening.
+- Ends with simple totals (days, units, neighbourhoods), a thank-you to all hosts, and the Prayer for Families.
+- **Map:** hand-drawn style map of Halifax in the poster colours. Show **neighbourhoods only, never home addresses** (Beechville, Clayton Park, Dartmouth, Upper Sackville, Beaver Bank, Harrietsfield). The parish church can be the only exact pin.
+- **Photos:** only with the host family's permission, especially when children are in them.
+- Unit colours: St. Alphonsa purple, St. Chavara orange, St. Mariam Thresia teal, St. Mother Teresa blue, St. Thomas red, St. Euphrasia green, all units gold.
+
+Memories collected so far:
+
+| Day | Date | Host | Unit | Moment |
+| --- | --- | --- | --- | --- |
+| 1 | Wed, Oct 21 | Bibin & Febina, Beechville | St. Mariam Thresia | Angelus, Rosary, Prayer for Families, kids sang a Marian song, Bibin read the Bible, coffee and fellowship |
+| 2 | Thu, Oct 22 | Franklin & Vinu, Halifax | St. Euphrasia | Beautiful prayer corner, Fr. Daris read the Bible, celebrated Jobin & Priyanka's 14th anniversary, statue handed to Jobin |
+| 3 | Fri, Oct 23 | Jobin & Priyanka, Halifax | St. Chavara | Combined with St. Chavara unit prayer meeting, Fr. Daris's reflection, Kahoot quiz, anniversary celebrated again at home |
+| 4 | Sat, Oct 24 | Akhil & Dona, Dartmouth | St. Thomas | Dona led all the prayers, prayer corner with flowers and lights, little ones made friends |
+| 5 | Sun, Oct 25 | Parish church | All units | Rosary at 4:30 PM before Holy Mass, last Sunday at the current church |
+| 6 | Mon, Oct 26 | Johns & Susanna, Halifax | St. Euphrasia | TODO |
+| 7 | Tue, Oct 27 | Job & Reni, Upper Sackville | St. Mother Teresa | TODO |
+| 8 | Wed, Oct 28 | Raphy & Lincy, Beaver Bank | St. Mother Teresa | TODO |
+| 9 | Thu, Oct 29 | Nyjo & Josna, Dartmouth | St. Thomas | TODO |
+| 10 | Fri, Oct 30 | Febin & Ann, Harrietsfield | St. Euphrasia | TODO |
+
 ## Audience
 
 - Families of Holy Family Parish, mostly Malayali, many with young children
@@ -80,6 +107,8 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 | `assets/9-month-journey.jpg` | 9-month journey poster |
 | `private/` | Files kept on the maintainer's computer only, never pushed (ignored by git). Holds the Aug 23, 2026 group photo until parents approve |
 | `events/rosary-2026/index.html` | Sign-up page for the 10-day Family Rosary |
+| `assets/fonts/noto-serif-malayalam/` | Malayalam font used for printed material (SIL Open Font License) |
+| `print/prayer-card/` | Folded wallet prayer card: print-ready PDF, previews, printing notes |
 
 ## Open decisions
 
