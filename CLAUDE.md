@@ -34,7 +34,8 @@ Turn `events/rosary-2026/` into a keepsake page, "Mother Mary's Journey".
 - One card per day: host family names, unit colour, 2 to 3 photos, one line about the evening.
 - Ends with simple totals (days, units, neighbourhoods), a thank-you to all hosts, and the Prayer for Families.
 - **Map:** hand-drawn style map of Halifax in the poster colours. Show **neighbourhoods only, never home addresses** (Beechville, Clayton Park, Dartmouth, Upper Sackville, Beaver Bank, Harrietsfield). The parish church can be the only exact pin.
-- **Photos:** only with the host family's permission, especially when children are in them.
+- **Photos:** only with the host family's permission, especially when children are in them. Tony confirmed on Nov 1, 2026 that all host families agreed.
+- **Done Nov 1, 2026:** home addresses and phone numbers removed from the page (neighbourhoods only), sign-up sections removed, page marked Completed. jy.holyfamilyhalifax.ca stays on this page for now (forwarding is set at the domain provider, not in the repo).
 - Unit colours: St. Alphonsa purple, St. Chavara orange, St. Mariam Thresia teal, St. Mother Teresa blue, St. Thomas red, St. Euphrasia green, all units gold.
 
 Memories collected so far:
@@ -45,12 +46,12 @@ Memories collected so far:
 | 2 | Thu, Oct 22 | Franklin & Vinu, Halifax | St. Euphrasia | Beautiful prayer corner, Fr. Daris read the Bible, celebrated Jobin & Priyanka's 14th anniversary, statue handed to Jobin |
 | 3 | Fri, Oct 23 | Jobin & Priyanka, Halifax | St. Chavara | Combined with St. Chavara unit prayer meeting, Fr. Daris's reflection, Kahoot quiz, anniversary celebrated again at home |
 | 4 | Sat, Oct 24 | Akhil & Dona, Dartmouth | St. Thomas | Dona led all the prayers, prayer corner with flowers and lights, little ones made friends |
-| 5 | Sun, Oct 25 | Parish church | All units | Rosary at 4:30 PM before Holy Mass, last Sunday at the current church |
-| 6 | Mon, Oct 26 | Johns & Susanna, Halifax | St. Euphrasia | TODO |
-| 7 | Tue, Oct 27 | Job & Reni, Upper Sackville | St. Mother Teresa | TODO |
-| 8 | Wed, Oct 28 | Raphy & Lincy, Beaver Bank | St. Mother Teresa | TODO |
-| 9 | Thu, Oct 29 | Nyjo & Josna, Dartmouth | St. Thomas | TODO |
-| 10 | Fri, Oct 30 | Febin & Ann, Harrietsfield | St. Euphrasia | TODO |
+| 5 | Sun, Oct 25 | Parish church | All units | Rosary at 4:30 PM before Holy Mass, families from all units, altar table with candles |
+| 6 | Mon, Oct 26 | Johns & Susanna, Halifax | St. Euphrasia | Angelus, Rosary, Prayer for Families, Johns read the Bible, Holy Family prayer corner, statue handed to Job |
+| 7 | Tue, Oct 27 | Job & Reni, Upper Sackville | St. Mother Teresa | Beautiful lit prayer wall with statues of Mother Mary, the Sacred Heart and St. Joseph, many families kneeling in prayer, statue handed to Raphy & Lincy |
+| 8 | Wed, Oct 28 | Raphy & Lincy, Beaver Bank | St. Mother Teresa | Angelus, Rosary, Prayer for Families, Bible reading; Raphy & Lincy built a special altar for Mother Mary (blue and white canopy, pink cloth, candles, teal and gold drape) |
+| 9 | Thu, Oct 29 | Nyjo & Josna, Dartmouth | St. Thomas | Achan joined and read the Bible, lots of kids kneeling in prayer, Holy Family and Sacred Heart prayer corner |
+| 10 | Fri, Oct 30 | Febin & Ann, Harrietsfield | St. Euphrasia | Final evening; Ann led the prayers, Achan read the Bible; beautiful wooden prayer wall with Sacred Heart and Holy Family pictures |
 
 ## Audience
 
@@ -106,7 +107,9 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 | `assets/parish-logo.jpg` | Holy Family Parish logo (approved) |
 | `assets/9-month-journey.jpg` | 9-month journey poster |
 | `private/` | Files kept on the maintainer's computer only, never pushed (ignored by git). Holds the Aug 23, 2026 group photo until parents approve |
-| `events/rosary-2026/index.html` | Sign-up page for the 10-day Family Rosary |
+| `events/rosary-2026/index.html` | "Mother Mary's Journey" memory page for the 10-day Family Rosary (built Nov 1, 2026) |
+| `events/rosary-2026/schedule.html` | The original sign-up page, kept as a record (no addresses or phone numbers) |
+| `events/rosary-2026/photos/` | 3 photos per day (`dayNN-1.jpg` to `dayNN-3.jpg`), used with host families' permission |
 | `assets/fonts/noto-serif-malayalam/` | Malayalam font used for printed material (SIL Open Font License) |
 | `print/prayer-card/` | Folded wallet prayer card: print-ready PDF, previews, printing notes |
 
