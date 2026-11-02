@@ -29,6 +29,8 @@ One-time event pages live in `events/` (see below) and can be built when asked.
 
 Turn `events/rosary-2026/` into a keepsake page, "Mother Mary's Journey".
 
+Inspired by the 10-day Rosary held in 2020 by the Jesus Youth Young Adults of St. Catherine of Siena Parish (per Tony).
+
 - Opens with the title and a short line, e.g. "10 evenings, 10 homes, one parish family praying together."
 - As the reader scrolls, a gold path draws from Day 1 to Day 10, with a small statue icon moving along it.
 - One card per day: host family names, unit colour, 2 to 3 photos, one line about the evening.
@@ -125,6 +127,7 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 | `events/rosary-2026/schedule.html` | The original sign-up page, kept as a record (no addresses or phone numbers) |
 | `events/rosary-2026/photos/` | 3 photos per day (`dayNN-1.jpg` to `dayNN-3.jpg`), used with host families' permission |
 | `assets/fonts/noto-serif-malayalam/` | Malayalam font used for printed material (SIL Open Font License) |
+| `assets/fonts/web/` | Subset web fonts for the site: Lora (headings, English prayer) and Noto Serif Malayalam (SIL Open Font License) |
 | `print/prayer-card/` | Folded wallet prayer card: print-ready PDF, previews, printing notes |
 
 ## Open decisions
