@@ -115,6 +115,7 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 | Path | What it is |
 | --- | --- |
 | `index.html` | Home page (draft for core team review) |
+| `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` | Jesus Youth logo as the browser tab icon and phone home-screen icon (linked from every page) |
 | `assets/group-photo-aug-2026.jpg` | Aug 23, 2026 group photo, web size (parents approved Nov 1, 2026) |
 | `content/9-month-journey.md` | The nine monthly topics |
 | `content/prayer-english.md` | Family prayer, English |
