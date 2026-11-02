@@ -14,7 +14,7 @@ Website for the **Jesus Youth Family Prayer Group** at Holy Family Syro-Malabar 
 
 ## Status
 
-**Main website: planning only. Do not build it until asked.** Decisions are still being made with the core team. Collect content and decisions here first.
+**Main website: first draft built Nov 1, 2026 (`index.html` at the repo root) for the core team to review.** It is marked `noindex` until the core team approves. No WhatsApp join button (Tony's decision). The Mother Mary's Journey page ends with a "Visit our Jesus Youth family" button linking to the home page. To change the highlighted month, edit `CURRENT_MONTH` in the home page script.
 
 One-time event pages live in `events/` (see below) and can be built when asked.
 
@@ -72,6 +72,18 @@ Memories collected so far:
 | Testimonies | Short sharings from families | Only with their permission |
 | Useful links | Parish website, Mass times, Jesus Youth Canada | Real links still needed |
 
+Decisions from the Nov 1, 2026 review (Tony):
+
+- Next prayer meeting: Sat, Nov 21, shown with a **"Tentative"** tag until the venue is confirmed.
+- Upcoming events: night vigil Fri, Nov 6, shown with a **"Tentative"** tag.
+- 9-month journey: we are on **Month 3** (Jesus at the Center of the Home). Highlight it.
+- Family prayer: no changes.
+- Prayer intentions: leave out for now.
+- Photos: all approvals received, including the Aug 23, 2026 group photo.
+- Testimonies: keep the section with a placeholder; Tony is collecting sharings this week.
+- Useful links: Jesus Youth Canada is https://jesusyouth.ca/ . Parish website and Mass times still TODO.
+- Sharing plan: share the Mother Mary's Journey link first; its last section links to the home page.
+
 Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up, WhatsApp group join request, Teens prayer meeting, outreach landing page.
 
 ## Writing style
@@ -100,6 +112,8 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 
 | Path | What it is |
 | --- | --- |
+| `index.html` | Home page (draft for core team review) |
+| `assets/group-photo-aug-2026.jpg` | Aug 23, 2026 group photo, web size (parents approved Nov 1, 2026) |
 | `content/9-month-journey.md` | The nine monthly topics |
 | `content/prayer-english.md` | Family prayer, English |
 | `content/prayer-malayalam.md` | Family prayer, Malayalam |
@@ -116,7 +130,7 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 ## Open decisions
 
 - [x] Fr. Daris approves using the logos
-- [ ] Parents approve the group photo (then move it from `private/` to `assets/`)
+- [x] Parents approve the group photo (approved Nov 1, 2026; move it from `private/` to `assets/` when building the site)
 - [ ] Create the prayer intentions form, and decide who reads the intentions
 - [ ] Collect real links: parish website, Mass times, Jesus Youth Canada
 - [ ] Decide who updates the site after each meeting

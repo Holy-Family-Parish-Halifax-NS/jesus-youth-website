@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- DRAFT for core team review. Remove the noindex line below once the core team approves. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Jesus Youth Holy Family Parish, Halifax</title>
+<meta name="description" content="Jesus Youth Family Prayer Group at Holy Family Syro-Malabar Catholic Parish, Halifax. All families welcome, kids too.">
+<style>
+  :root { --navy:#14335C; --orange:#D9622B; --cream:#FBF3E7; --gold:#B8862B; --gold-l:#E9D3A3; --sage:#5E7D5A; --ink:#22303F; --muted:#5A6470; --line:#E6DCCB; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:64px; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans Malayalam",sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; font-size:17px; }
+  img { max-width:100%; display:block; }
+  a { color:var(--orange); }
+  .wrap { max-width:760px; margin:0 auto; padding:0 18px; }
+  .serif { font-family:Georgia,"Times New Roman",serif; }
+
+  /* Top bar */
+  .bar { position:sticky; top:0; z-index:20; background:rgba(251,243,231,.94); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .bar .wrap { display:flex; align-items:center; gap:10px; height:56px; }
+  .bar img { width:34px; height:34px; border-radius:50%; }
+  .bar b { color:var(--navy); font-size:15px; line-height:1.15; }
+  .bar nav { margin-left:auto; display:flex; gap:4px; overflow-x:auto; scrollbar-width:none; }
+  .bar nav::-webkit-scrollbar { display:none; }
+  .bar nav a { white-space:nowrap; text-decoration:none; color:var(--navy); font-size:14px; font-weight:600; padding:6px 10px; border-radius:999px; }
+  .bar nav a:hover { background:#fff; }
+  @media (max-width:640px) { .bar nav { display:none; } }
+
+  /* Hero */
+  .hero { position:relative; color:#fff; text-align:center; overflow:hidden; }
+  .hero img.bg { width:100%; height:min(78vh,560px); object-fit:cover; object-position:center 30%; }
+  .hero .shade { position:absolute; inset:0; background:linear-gradient(180deg,rgba(20,51,92,.15) 0%,rgba(20,51,92,.35) 45%,rgba(20,51,92,.9) 100%); }
+  .hero .txt { position:absolute; left:0; right:0; bottom:0; padding:0 18px 28px; }
+  .hero .logos { display:flex; justify-content:center; gap:14px; margin-bottom:10px; }
+  .hero .logos img { width:54px; height:54px; border-radius:50%; background:#fff; padding:3px; }
+  .hero h1 { margin:0; font-family:Georgia,serif; font-weight:normal; font-size:clamp(28px,7vw,44px); line-height:1.15; text-shadow:0 2px 12px rgba(0,0,0,.35); }
+  .hero p { margin:8px auto 0; max-width:520px; font-size:18px; text-shadow:0 1px 8px rgba(0,0,0,.4); }
+
+  section { padding:8px 0 4px; }
+  h2 { font-family:Georgia,serif; font-weight:normal; color:var(--navy); font-size:27px; text-align:center; margin:46px 0 6px; }
+  .sub { text-align:center; color:var(--muted); margin:0 0 18px; font-size:15px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:20px; }
+
+  /* Welcome */
+  .welcome p { margin:0 0 12px; }
+  .welcome .line { font-weight:700; color:var(--navy); text-align:center; margin:14px 0 0; }
+
+  /* Next meeting */
+  .next { border-top:6px solid var(--orange); }
+  .next .date { display:flex; gap:16px; align-items:center; }
+  .cal { flex:none; width:78px; text-align:center; border-radius:14px; overflow:hidden; border:1px solid var(--line); }
+  .cal span { display:block; background:var(--orange); color:#fff; font-size:13px; font-weight:700; letter-spacing:.08em; padding:3px 0; }
+  .cal b { display:block; font-family:Georgia,serif; font-size:34px; color:var(--navy); line-height:1.25; }
+  .cal small { display:block; color:var(--muted); font-size:12px; padding-bottom:4px; }
+  .next h3 { margin:0; color:var(--navy); font-size:21px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; background:#FFF0B3; color:#7A5B00; vertical-align:middle; }
+  .tag.past { background:#E3FCEF; color:#1F6B45; }
+  .details { list-style:none; padding:0; margin:14px 0 0; }
+  .details li { padding:8px 0; border-top:1px dashed var(--line); display:flex; gap:10px; }
+  .details li span:first-child { width:24px; flex:none; text-align:center; }
+  .muted { color:var(--muted); }
+
+  /* Events */
+  .events { display:grid; gap:14px; }
+  .event { display:flex; gap:14px; align-items:flex-start; }
+  .event .cal { width:64px; }
+  .event .cal b { font-size:26px; }
+  .event h3 { margin:0 0 4px; color:var(--navy); font-size:19px; }
+  .event p { margin:0; }
+  .journey-card { display:grid; grid-template-columns:120px 1fr; gap:14px; align-items:center; text-decoration:none; color:inherit; }
+  .journey-card img { width:120px; height:120px; object-fit:cover; border-radius:14px; }
+  .journey-card h3 { margin:2px 0 4px; color:var(--navy); font-size:19px; }
+  .journey-card .ml { color:var(--navy); font-size:15px; }
+  .btn { display:inline-block; margin-top:8px; background:var(--navy); color:#fff; text-decoration:none; font-weight:700; padding:9px 16px; border-radius:999px; font-size:15px; }
+
+  /* 9-month journey */
+  .months { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:10px; }
+  .month { background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; position:relative; }
+  .month .n { font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); }
+  .month h3 { margin:2px 0 4px; font-size:16px; color:var(--navy); line-height:1.3; }
+  .month p { margin:0; font-size:14px; color:var(--muted); }
+  .month.now { background:var(--navy); border-color:var(--navy); box-shadow:0 6px 18px rgba(20,51,92,.25); }
+  .month.now h3 { color:#fff; } .month.now p { color:#D6E0EE; } .month.now .n { color:var(--gold-l); }
+  .month.now::after { content:"This month"; position:absolute; top:10px; right:10px; background:var(--orange); color:#fff; font-size:11px; font-weight:800; padding:2px 8px; border-radius:999px; }
+  .month.done { opacity:.75; }
+  .poster-link { text-align:center; margin:12px 0 0; font-size:15px; }
+
+  /* Prayer */
+  .prayer { border-left:6px solid var(--gold); }
+  .toggle { display:flex; justify-content:center; gap:6px; margin:0 0 16px; }
+  .toggle button { border:1px solid var(--navy); background:#fff; color:var(--navy); padding:7px 16px; border-radius:999px; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .toggle button[aria-pressed="true"] { background:var(--navy); color:#fff; }
+  .prayer p { margin:0 0 12px; }
+  .prayer [lang="ml"] p { line-height:1.85; }
+  .prayer .end { font-style:italic; color:var(--muted); }
+  [hidden] { display:none !important; }
+
+  /* Photos */
+  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+  .gallery button { padding:0; border:0; background:none; cursor:zoom-in; border-radius:12px; overflow:hidden; aspect-ratio:1; }
+  .gallery button.wide { grid-column:span 3; aspect-ratio:4/3; }
+  .gallery img { width:100%; height:100%; object-fit:cover; }
+  .cap { text-align:center; color:var(--muted); font-size:14px; margin:8px 0 0; }
+
+  /* Testimonies */
+  .soon { text-align:center; }
+  .soon .q { font-family:Georgia,serif; font-size:52px; line-height:.6; color:var(--gold-l); }
+
+  /* Links */
+  .links { display:grid; gap:10px; }
+  .link { display:flex; align-items:center; gap:12px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px 16px; text-decoration:none; color:var(--navy); font-weight:700; }
+  .link small { display:block; font-weight:400; color:var(--muted); }
+  .link .go { margin-left:auto; color:var(--orange); font-size:20px; }
+  .link.off { opacity:.6; }
+
+  footer { text-align:center; color:var(--muted); font-size:14px; padding:40px 18px 50px; }
+  footer img { width:44px; height:44px; border-radius:50%; display:inline-block; margin:0 6px 8px; }
+
+  .lb { position:fixed; inset:0; background:rgba(10,20,35,.92); display:flex; align-items:center; justify-content:center; z-index:50; padding:16px; }
+  .lb img { max-height:88vh; border-radius:10px; }
+  .lb button { position:absolute; top:12px; right:14px; background:none; border:0; color:#fff; font-size:34px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <img src="assets/jy-logo.png" alt="">
+    <b>Jesus Youth<br>Holy Family Parish</b>
+    <nav aria-label="Sections">
+      <a href="#next">Next meeting</a><a href="#events">Events</a><a href="#journey">Journey</a><a href="#prayer">Prayer</a><a href="#photos">Photos</a><a href="#links">Links</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <img class="bg" src="assets/group-photo-aug-2026.jpg" alt="Families of our Jesus Youth Family Prayer Group, August 2026">
+  <div class="shade"></div>
+  <div class="txt">
+    <div class="logos"><img src="assets/jy-logo.png" alt="Jesus Youth logo"><img src="assets/parish-logo.jpg" alt="Holy Family Parish logo"></div>
+    <h1>Jesus Youth<br>Holy Family Parish, Halifax</h1>
+    <p>Families praying, growing and sharing faith together.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="welcome">
+    <h2>Welcome</h2>
+    <div class="card welcome">
+      <p>We are the <b>Jesus Youth Family Prayer Group</b> at Holy Family Syro-Malabar Catholic Parish, Halifax. Families come together to pray, read God's Word, and support one another, with our chaplain <b>Fr. Daris Cherian</b>.</p>
+      <p>Jesus Youth is an international Catholic movement. Its spirituality rests on prayer, the Word of God, the sacraments, and fellowship.</p>
+      <p class="line">All families welcome, kids too.<br>New to Jesus Youth? Everyone's welcome.</p>
+    </div>
+  </section>
+
+  <section id="next">
+    <h2>Next Family prayer meeting</h2>
+    <div class="card next">
+      <div class="date">
+        <div class="cal"><span>NOV</span><b>21</b><small>Saturday</small></div>
+        <div>
+          <h3>Family prayer meeting <span class="tag">Tentative</span></h3>
+          <div class="muted">Proposed date, waiting to confirm the venue</div>
+        </div>
+      </div>
+      <ul class="details">
+        <li><span>🎶</span><span>Session and praise and worship led by Jikku chettan</span></li>
+        <li><span>📖</span><span>Bible reading, then sharing in small groups</span></li>
+        <!-- TODO: add time and place once confirmed -->
+        <li><span>📍</span><span class="muted">Time and place: to be confirmed</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Events</h2>
+    <p class="sub">Coming up, and what we've done together</p>
+    <div class="events">
+      <div class="card event">
+        <div class="cal"><span>NOV</span><b>6</b><small>Friday</small></div>
+        <div>
+          <h3>Night vigil <span class="tag">Tentative</span></h3>
+          <p>An evening of intercession and prayer. Details to be confirmed.</p>
+        </div>
+      </div>
+      <a class="card journey-card" href="events/rosary-2026/">
+        <img src="events/rosary-2026/photos/day08-1.jpg" alt="Special altar for Mother Mary">
+        <div>
+          <span class="tag past">October 2026</span>
+          <h3>Mother Mary's Journey</h3>
+          <div class="ml" lang="ml">മാതാവ് നമ്മുടെ ഭവനങ്ങളിലേക്ക്</div>
+          <p class="muted" style="margin:4px 0 0">10 evenings of the Family Rosary, from home to home.</p>
+          <span class="btn">See the journey →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="journey">
+    <h2>Our 9-month journey</h2>
+    <p class="sub">Each month the Family prayer meeting walks through one topic together</p>
+    <div class="months" id="months"></div>
+    <p class="poster-link"><a href="assets/9-month-journey.jpg" target="_blank" rel="noopener">See the 9-month journey poster</a></p>
+  </section>
+
+  <section id="prayer">
+    <h2>Prayer for Families</h2>
+    <p class="sub">Pray it at home, or whenever two or more of us meet</p>
+    <div class="card prayer">
+      <div class="toggle" role="group" aria-label="Choose language">
+        <button type="button" data-lang="ml" aria-pressed="true" lang="ml">മലയാളം</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+      <div id="pr-ml" lang="ml">
+        <p>സർവ്വശക്തനും പിതാവുമായ ത്രിയേക ദൈവമേ,<br>
+"ക്രിസ്തു നിങ്ങളെ സ്നേഹിച്ചതുപോലെ നിങ്ങളും സ്നേഹത്തിൽ ജീവിക്കുവിൻ" (എഫേ 5:2) എന്ന ആഹ്വാനത്തോട് വിശ്വസ്തതയോടെ ആമേൻ പറഞ്ഞുകൊണ്ട് ഞങ്ങൾ ആരംഭിച്ചിരിക്കുന്ന ഈ കുടുംബജീവിതത്തെ ഞങ്ങൾ അങ്ങേക്ക് സമർപ്പിക്കുന്നു.</p>
+        <p>പരിശുദ്ധാത്മാവിന്റെ ജ്ഞാനവും സമാധാനവും നൽകി, ഓരോ തീരുമാനത്തിലും ഞങ്ങളുടെ കുടുംബങ്ങളെ വഴിനടത്തണമേ.</p>
+        <p>വിശ്വാസത്തിൽ അടിയുറച്ചും കൂദാശകളിലും പ്രാർത്ഥനയിലും വേരൂന്നി വളരുവാനും, അതുവഴി മറ്റുള്ളവർക്ക് ഒരു പ്രകാശമായി തീരുവാനും, ഈശോയെ ഇനിയും അറിയാത്തവരിലേക്ക് അവിടുത്തെ സുവിശേഷം എത്തിക്കുവാനും ഞങ്ങളെ ഒരു ഉപകരണമാക്കണമേ.</p>
+        <p>"കർത്താവിന്റെ ദാനമാണ് മക്കൾ, ഉദരഫലം ഒരു സമ്മാനവും" (സങ്കീർത്തനങ്ങൾ 127:3). കർത്താവേ, അങ്ങ് ഞങ്ങൾക്ക് ദാനമായി നല്കിയ മക്കളെ ദൈവഹിതമനുസരിച്ച് വിശുദ്ധിയിലും ജ്ഞാനത്തിലും വളർത്തുവാനുള്ള കൃപ തരണമേ.</p>
+        <p>ജീവിതവിശുദ്ധിയിലൂടെ ക്രിസ്തുവിന്റെ സമാധാനം ഞങ്ങളെ കണ്ടുമുട്ടുന്നവർക്ക് പകർന്നുകൊടുക്കുവാനും, വിവിധങ്ങളായ ജീവിതസാഹചര്യങ്ങളിലൂടെ കടന്നുപോകുന്നവർക്ക് ഒരാശ്വാസമാകുവാനും ഞങ്ങൾക്ക് ഇടയാകട്ടെ.</p>
+        <p>കർത്താവേ, പരിശുദ്ധ കത്തോലിക്കാസഭയെയും ഞങ്ങളുടെ ഇടവകയെയും ജീസസ് യൂത്ത് മുന്നേറ്റത്തെയും അനുഗ്രഹിച്ചു കാത്തുപരിപാലിക്കണമേ.</p>
+        <p>നസ്രത്തിലെ തിരുക്കുടുംബമേ, ഞങ്ങളുടെ കുടുംബങ്ങളെ നയിക്കണമേ.</p>
+        <p class="end">സ്വർഗ്ഗ. നന്മ. ത്രിത്വസ്തുതി.</p>
+      </div>
+      <div id="pr-en" hidden>
+        <p>Lord Jesus, thank you for the gift of our families.<br>
+Be the center of our homes, our love, and every decision we make.</p>
+        <p>Heal what is broken among us,<br>
+and teach us to forgive one another as You forgive us.</p>
+        <p>Holy Spirit, fill our families with Your peace, patience, and wisdom.</p>
+        <p>We lift up every family in need:<br>
+those looking for a job, those searching for a home,<br>
+those longing for peace in their family,<br>
+and couples waiting for the gift of a child.<br>
+Provide for them, Lord, as You know best.</p>
+        <p>Bless our children.<br>
+Give us the grace to raise them in faith and holiness,<br>
+and keep them always close to You.</p>
+        <p>Help us grow through prayer, Your Word, the sacraments, and fellowship.<br>
+Make our families a light for others,<br>
+and use us to bring Your love to other families.</p>
+        <p>Bless our parish, the Jesus Youth movement, and Your holy Church.</p>
+        <p>Mother Mary, Saint Joseph, Holy Family of Nazareth,<br>
+protect our families and pray for us.</p>
+        <p>Amen.</p>
+        <p class="end">Our Father, Hail Mary, Glory Be</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <p class="sub">Moments from our prayer meetings and the Family Rosary</p>
+    <div class="gallery" id="gallery">
+      <button type="button" class="wide"><img src="assets/group-photo-aug-2026.jpg" alt="Our families together, August 2026" loading="lazy"></button>
+      <button type="button"><img src="events/rosary-2026/photos/day07-1.jpg" alt="Lit prayer wall, Day 7 of the Family Rosary" loading="lazy"></button>
+      <button type="button"><img src="events/rosary-2026/photos/day01-2.jpg" alt="Families kneeling in prayer, Day 1" loading="lazy"></button>
+      <button type="button"><img src="events/rosary-2026/photos/day05-2.jpg" alt="Our parish church, Day 5" loading="lazy"></button>
+      <button type="button"><img src="events/rosary-2026/photos/day09-2.jpg" alt="Families and children praying, Day 9" loading="lazy"></button>
+      <button type="button"><img src="events/rosary-2026/photos/day04-3.jpg" alt="Little ones making friends, Day 4" loading="lazy"></button>
+      <button type="button"><img src="events/rosary-2026/photos/day10-1.jpg" alt="Wooden prayer wall, Day 10" loading="lazy"></button>
+    </div>
+    <p class="cap">Photos shared with the families' permission.</p>
+  </section>
+
+  <section id="testimonies">
+    <h2>Testimonies</h2>
+    <div class="card soon">
+      <div class="q" aria-hidden="true">&ldquo;</div>
+      <p><b>Coming soon.</b> Short sharings from our families about what God is doing in their homes.</p>
+    </div>
+    <!-- TODO: add testimonies (Tony is collecting them), only with each family's permission -->
+  </section>
+
+  <section id="links">
+    <h2>Useful links</h2>
+    <div class="links">
+      <a class="link" href="https://jesusyouth.ca/" target="_blank" rel="noopener"><span>🌍</span><span>Jesus Youth Canada<small>jesusyouth.ca</small></span><span class="go">→</span></a>
+      <!-- TODO: add the real parish website and Mass times links -->
+      <div class="link off"><span>⛪</span><span>Holy Family Parish website<small>Link coming soon</small></span></div>
+      <div class="link off"><span>🕯️</span><span>Mass times<small>Link coming soon</small></span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <img src="assets/jy-logo.png" alt=""><img src="assets/parish-logo.jpg" alt="">
+  <p><b>Jesus Youth Family Prayer Group</b><br>Holy Family Syro-Malabar Catholic Parish, Halifax, Nova Scotia</p>
+  <p>All families welcome, kids too. New to Jesus Youth? Everyone's welcome.</p>
+</footer>
+
+<div class="lb" id="lb" hidden><button type="button" aria-label="Close">&times;</button><img alt=""></div>
+
+<script>
+  /* =====================================================================
+     TO UPDATE each month: change CURRENT_MONTH to the month we are on.
+     Topics come from content/9-month-journey.md.
+     ===================================================================== */
+  const CURRENT_MONTH = 3;
+  const MONTHS = [
+    ["God's Love, The Foundation of Our Families", "God's love as the base of family life"],
+    ["Healing and Forgiveness in the Family", "Letting go of hurts, reconciliation"],
+    ["Jesus at the Center of the Home", "Making Christ the center of family decisions"],
+    ["Praying Together as a Family", "Family prayer habits"],
+    ["The Holy Spirit in Family Life", "Guidance, patience, wisdom"],
+    ["The Power of the Eucharist", "Attending Holy Mass together"],
+    ["Raising Children in Faith", "Passing faith to the next generation"],
+    ["Family as a Mission", "Witnessing Christ through family life"],
+    ["Living the Jesus Youth Spirituality as Families", "Prayer, Word, Sacraments, Fellowship"]
+  ];
+
+  /* ---------- no need to edit below this line ---------- */
+  document.getElementById("months").innerHTML = MONTHS.map(([t, s], i) => {
+    const n = i + 1, cls = n === CURRENT_MONTH ? "now" : n < CURRENT_MONTH ? "done" : "";
+    return `<div class="month ${cls}"><div class="n">Month ${n}</div><h3>${t}</h3><p>${s}</p></div>`;
+  }).join("");
+
+  document.querySelectorAll(".toggle button").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".toggle button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    document.getElementById("pr-ml").hidden = b.dataset.lang !== "ml";
+    document.getElementById("pr-en").hidden = b.dataset.lang !== "en";
+  }));
+
+  const lb = document.getElementById("lb"), lbImg = lb.querySelector("img");
+  document.getElementById("gallery").addEventListener("click", e => {
+    const img = e.target.closest("button")?.querySelector("img"); if (!img) return;
+    lbImg.src = img.src; lbImg.alt = img.alt; lb.hidden = false;
+  });
+  lb.addEventListener("click", () => { lb.hidden = true; });
+  addEventListener("keydown", e => { if (e.key === "Escape") lb.hidden = true; });
+</script>
+</body>
+</html>
