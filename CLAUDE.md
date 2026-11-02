@@ -83,7 +83,7 @@ Decisions from the Nov 1, 2026 review (Tony):
 - Prayer intentions: leave out for now.
 - Photos: all approvals received, including the Aug 23, 2026 group photo.
 - Testimonies: keep the section with a placeholder; Tony is collecting sharings this week.
-- Useful links: Jesus Youth Canada is https://jesusyouth.ca/ . Parish website and Mass times still TODO.
+- Useful links: Jesus Youth Canada is https://jesusyouth.ca/ . Parish website is https://holyfamilyhfx.ca/ . Mass times are not copied onto our site; the "Mass times" card links to the parish website so they never go out of date.
 - Sharing plan: share the Mother Mary's Journey link first; its last section links to the home page.
 
 Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up, WhatsApp group join request, Teens prayer meeting, outreach landing page.
@@ -135,6 +135,6 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 - [x] Fr. Daris approves using the logos
 - [x] Parents approve the group photo (approved Nov 1, 2026; move it from `private/` to `assets/` when building the site)
 - [ ] Create the prayer intentions form, and decide who reads the intentions
-- [ ] Collect real links: parish website, Mass times, Jesus Youth Canada
+- [x] Collect real links: parish website, Mass times, Jesus Youth Canada (Nov 1, 2026)
 - [ ] Decide who updates the site after each meeting
 - [ ] Core team agrees on the first version
