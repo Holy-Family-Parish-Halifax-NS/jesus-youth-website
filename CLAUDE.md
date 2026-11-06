@@ -77,7 +77,7 @@ Memories collected so far:
 Decisions from the Nov 1, 2026 review (Tony):
 
 - Next prayer meeting: Sat, Nov 21, shown with a **"Tentative"** tag until the venue is confirmed.
-- Upcoming events: night vigil Fri, Nov 6, shown with a **"Tentative"** tag.
+- Upcoming events: the night vigil is **always on the first Friday night of the month**. November's (Fri, Nov 6) was postponed to the next first Friday, **Fri, Dec 4, 2026**, shown with a "Tentative" tag.
 - 9-month journey: we are on **Month 3** (Jesus at the Center of the Home). Highlight it.
 - Family prayer: no changes.
 - Prayer intentions: leave out for now.
