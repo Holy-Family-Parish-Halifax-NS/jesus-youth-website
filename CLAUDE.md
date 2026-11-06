@@ -68,7 +68,7 @@ Memories collected so far:
 | Next prayer meeting | Date, time, place, RSVP link | Update after every meeting |
 | Upcoming events | e.g. 10-day Rosary in homes, Campus Alpha | Remove events once they pass |
 | 9-month journey | Monthly topics and subtopics | See `content/9-month-journey.md` |
-| Family prayer | Prayer in English and Malayalam, reader can switch | See `content/prayer-*.md` |
+| Family prayer | Official Malayalam prayer, plus its English translation; reader can switch | See `content/prayer-*.md` |
 | Prayer intentions | Link to a form to send an intention | Form not created yet |
 | Photos | A few photos from past meetings | Permission rules below |
 | Testimonies | Short sharings from families | Only with their permission |
@@ -79,7 +79,7 @@ Decisions from the Nov 1, 2026 review (Tony):
 - Next prayer meeting: Sat, Nov 21, shown with a **"Tentative"** tag until the venue is confirmed.
 - Upcoming events: the night vigil is **always on the first Friday night of the month**. November's (Fri, Nov 6) was postponed to the next first Friday, **Fri, Dec 4, 2026**, shown with a "Tentative" tag.
 - 9-month journey: we are on **Month 3** (Jesus at the Center of the Home). Highlight it.
-- Family prayer: no changes.
+- Family prayer: the **official prayer exists only in Malayalam** (`content/prayer-malayalam.md`). On Nov 6, 2026 the old English draft was replaced by an English **translation** of the Malayalam (`content/prayer-english.md`), approved by Tony for the website and shown with a "English translation of the Malayalam prayer" note. The മലയാളം / English switch is back on the home page and Mother Mary's Journey. TODO: confirm Fr. Daris's approval of the translation. Translation choices: "Triune God", Ephesians 5:2 as "Walk in love, as Christ loved us", no "Amen" at the end (the Malayalam ends straight into Our Father, Hail Mary, Glory Be).
 - Prayer intentions: leave out for now.
 - Photos: all approvals received, including the Aug 23, 2026 group photo.
 - Testimonies: keep the section with a placeholder; Tony is collecting sharings this week.
@@ -118,7 +118,7 @@ Ideas for later: Welcome / About us, Bible verse of the month, volunteer sign-up
 | `favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png` | Jesus Youth logo as the browser tab icon and phone home-screen icon (linked from every page) |
 | `assets/group-photo-aug-2026.jpg` | Aug 23, 2026 group photo, web size (parents approved Nov 1, 2026) |
 | `content/9-month-journey.md` | The nine monthly topics |
-| `content/prayer-english.md` | Family prayer, English |
+| `content/prayer-english.md` | English translation of the Malayalam family prayer (Nov 6, 2026) |
 | `content/prayer-malayalam.md` | Family prayer, Malayalam |
 | `assets/jy-logo.png` | Jesus Youth logo (approved) |
 | `assets/parish-logo.jpg` | Holy Family Parish logo (approved) |

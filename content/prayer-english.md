@@ -1,36 +1,32 @@
-# Prayer for Our Families
+# Prayer for Families (English translation)
 
-*Jesus Youth Family Prayer Group, Halifax*
+English translation of the official Malayalam prayer in `prayer-malayalam.md`, made Nov 6, 2026 and approved for the website by Tony. It follows the meaning of each line, worded as a natural English prayer. TODO: confirm Fr. Daris's approval of this translation.
 
 Each line break is intentional. Keep the text exactly as written.
 
-Lord Jesus, thank you for the gift of our families.<br>
-Be the center of our homes, our love, and every decision we make.
+Almighty Father, Triune God,<br>
+we have begun our family life by faithfully saying "Amen" to Your call:<br>
+"Walk in love, as Christ loved us" (Ephesians 5:2).<br>
+We offer this family life to You.
 
-Heal what is broken among us,<br>
-and teach us to forgive one another as You forgive us.
+Grant us the wisdom and peace of the Holy Spirit,<br>
+and guide our families in every decision we make.
 
-Holy Spirit, fill our families with Your peace, patience, and wisdom.
+Make us Your instruments:<br>
+to grow firm in faith, rooted in the sacraments and in prayer,<br>
+to become a light for others,<br>
+and to carry the Gospel of Jesus to those who do not yet know Him.
 
-We lift up every family in need:<br>
-those looking for a job, those searching for a home,<br>
-those longing for peace in their family,<br>
-and couples waiting for the gift of a child.<br>
-Provide for them, Lord, as You know best.
+"Children are a gift from the Lord, the fruit of the womb a reward" (Psalm 127:3).<br>
+Lord, give us the grace to raise the children You have given us<br>
+in holiness and wisdom, according to Your will.
 
-Bless our children.<br>
-Give us the grace to raise them in faith and holiness,<br>
-and keep them always close to You.
+Through holy lives, may we share the peace of Christ with everyone we meet,<br>
+and be a comfort to all who are passing through life's many different situations.
 
-Help us grow through prayer, Your Word, the sacraments, and fellowship.<br>
-Make our families a light for others,<br>
-and use us to bring Your love to other families.
+Lord, bless the holy Catholic Church, our parish, and the Jesus Youth movement,<br>
+and keep them always in Your loving care.
 
-Bless our parish, the Jesus Youth movement, and Your holy Church.
+Holy Family of Nazareth, guide our families.
 
-Mother Mary, Saint Joseph, Holy Family of Nazareth,<br>
-protect our families and pray for us.
-
-Amen.
-
-*Our Father, Hail Mary, Glory Be*
+*Our Father. Hail Mary. Glory Be.*
