@@ -76,7 +76,7 @@ Memories collected so far:
 
 Decisions from the Nov 1, 2026 review (Tony):
 
-- Next prayer meeting: was proposed for Sat, Nov 21; on Nov 25 Tony confirmed it is **Sat, Nov 28, 2026, right after Holy Mass** at the parish church. Led by Jikku chettan.
+- Next prayer meeting: was proposed for Sat, Nov 21; on Nov 25 Tony confirmed it is **Sat, Nov 28, 2026, right after the 9:00 AM Holy Mass** at the parish church. Don't name who leads the session on the website (Tony's preference). The parish has moved to a new church (Nov 2026); TODO: new church name and address. Don't use 6032 Normandy Drive for new events.
 - Upcoming events: the night vigil is **always on the first Friday night of the month**. November's (Fri, Nov 6) was postponed to the next first Friday, **Fri, Dec 4, 2026**, shown with a "Tentative" tag.
 - 9-month journey: we are on **Month 3** (Jesus at the Center of the Home). Highlight it.
 - Family prayer: the **official prayer exists only in Malayalam** (`content/prayer-malayalam.md`). On Nov 6, 2026 the old English draft was replaced by an English **translation** of the Malayalam (`content/prayer-english.md`), approved by Tony for the website and shown with a "English translation of the Malayalam prayer" note. The മലയാളം / English switch is back on the home page and Mother Mary's Journey. TODO: confirm Fr. Daris's approval of the translation. Translation choices: "Triune God", Ephesians 5:2 as "Walk in love, as Christ loved us", no "Amen" at the end (the Malayalam ends straight into Our Father, Hail Mary, Glory Be).
